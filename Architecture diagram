@@ -1,0 +1,62 @@
++--------------------------+
+|      PirateGame.java     |  ← Main entry point
++--------------------------+
+| - main()                |
+| - startGame()           |
++-----------+--------------+
+            |
+            v
++--------------------------+
+|      GameEngine.java     |  ← Controls flow, commands, game loop
++--------------------------+
+| - currentLocation        |
+| - player                 |
+| - map                    |
+| - handleInput()          |
+| - checkPuzzle()          |
++-----------+--------------+
+            |
+     +------+-------+
+     |              |
+     v              v
++-------------+   +----------------+
+|  Map.java   |   |  Puzzle.java   |  ← Riddle / logic-based puzzle
++-------------+   +----------------+
+| - locations[]|   | - puzzleText  |
+| - getNext() |   | - solution     |
+| - display() |   | - isSolved()   |
++------+------+   +----------------+
+       |
+       v
++---------------------+
+|  Location.java       |  ← A cell in the map (Island, Sea, Cave...)
++---------------------+
+| - name              |
+| - description       |
+| - hasPuzzle         |
+| - hasTreasure       |
+| - adjacentLocations |
++---------------------+
+
++----------------------+
+|  Player.java         |  ← Player stats and inventory
++----------------------+
+| - inventory[]        |
+| - currentLocation    |
+| - move()             |
+| - solvePuzzle()      |
++----------------------+
+
++----------------------+
+|  InventoryItem.java  |  ← Items like map pieces, compass, keys
++----------------------+
+| - name               |
+| - use()              |
++----------------------+
+
++----------------------+
+|  Treasure.java       |  ← The treasure to find!
++----------------------+
+| - description        |
+| - isFound            |
++----------------------+
