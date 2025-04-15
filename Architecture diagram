@@ -22,7 +22,7 @@
 |  Map.java   |   |  Puzzle.java   |  ← Riddle / logic-based puzzle
 +-------------+   +----------------+
 | - locations[]|   | - puzzleText  |
-| - getNext() |   | - solution     |
+                   | - solution     |
 | - display() |   | - isSolved()   |
 +------+------+   +----------------+
        |
@@ -41,15 +41,19 @@
 | - inventory[]        |
 | - currentLocation    |
 | - move()             |
+| - solveclue()        |
 | - solvePuzzle()      |
+|- fight()             |
+|- isAlive()           |
 +----------------------+
 
-+----------------------+
-|  InventoryItem.java  |  ← Items like map pieces, compass, keys
-+----------------------+
-| - name               |
-| - use()              |
-+----------------------+
++--------------------------- +
+|  InventoryItem.java        |  ← Items like map pieces, compass, keys
++----------------------      +
+| - ArrayList< puzzlePiece>()|
+| -hasSword()                |
+| - use()                    |
++----------------------------+
 
 +----------------------+
 |  Treasure.java       |  ← The treasure to find!
