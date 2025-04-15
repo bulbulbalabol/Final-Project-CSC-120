@@ -2,7 +2,6 @@
 |      PirateGame.java     |  ← Main entry point
 +--------------------------+
 | - main()                |
-| - startGame()           |
 +-----------+--------------+
             |
             v
@@ -13,7 +12,7 @@
 | - player                 |
 | - map                    |
 | - handleInput()          |
-| - checkPuzzle()          |
+| - inventory()            |
 +-----------+--------------+
             |
      +------+-------+
@@ -33,9 +32,7 @@
 +---------------------+
 | - name              |
 | - description       |
-| - hasPuzzle         |
-| - hasTreasure       |
-| - adjacentLocations |
+| - hasPuzzlePiece    |
 +---------------------+
 
 +----------------------+
