@@ -7,7 +7,6 @@ public class Location {
     private String description;
     private Boolean hasPuzzlePiece;
     private Boolean hasSword;
-    private HashMap<String, Location> neighbors;
 
 
         /*Default constructor */
@@ -15,7 +14,6 @@ public class Location {
             this.name = name;
             this.description = description;
             this.hasPuzzlePiece = hasPuzzlePiece;
-            this.neighbors = new HashMap<>();
         }
     
         /* Overloaded constructor with sword */
