@@ -6,14 +6,14 @@ public class Player {
         this.currentLocation = startLocation;
     }
 
-    public void move(String direction) {
+   /*  public void move(String direction) {
         Location newLocation = currentLocation.getNeighbor(direction);
         if (newLocation != null) {
             currentLocation = newLocation;
         } else {
             System.out.println("Can't go that way!");
         }
-    }
+    } */
 
     public Location getCurrentLocation() {
         return currentLocation;
