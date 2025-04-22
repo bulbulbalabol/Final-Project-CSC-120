@@ -1,3 +1,4 @@
+import java.util.HashMap;
 
 public class Location {
     
@@ -6,12 +7,15 @@ public class Location {
     private String description;
     private Boolean hasPuzzlePiece;
     private Boolean hasSword;
+    private HashMap<String, Location> neighbors;
+
 
         /*Default constructor */
         public Location(String name, String description, Boolean hasPuzzlePiece) {
             this.name = name;
             this.description = description;
             this.hasPuzzlePiece = hasPuzzlePiece;
+            this.neighbors = new HashMap<>();
         }
     
         /* Overloaded constructor with sword */

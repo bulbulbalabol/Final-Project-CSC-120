@@ -7,7 +7,7 @@ public class MapDisplay {
         JLabel label = new JLabel(mapIcon);
         frame.add(label);
         frame.pack();
-        frame.setLocationRelativeTo(null); // Center the frame
+        frame.setLocationRelativeTo(null);
         frame.setVisible(true);
     }
 }

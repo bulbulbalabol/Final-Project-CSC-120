@@ -4,15 +4,11 @@ public class Main {
 
     //Insert image of map
     MapDisplay.showMap("map.png");
+
+    GameEngine engine = new GameEngine();
+        engine.startGame();
    }
 }
 
 
-
-
-
-
-
-   }
-}
 
