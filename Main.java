@@ -3,7 +3,9 @@ public class Main {
     System.out.println("WELCOME TO WONDERLAND");
 
     //Insert image of map
-
+    MapDisplay.showMap("map.png");
+   }
+}
 
 
 
