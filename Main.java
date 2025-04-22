@@ -6,6 +6,7 @@ public class Main {
     //Insert image of map
     MapDisplay.showMap("map.png");
 
+    //Begins interacting with the player
     Scanner input = new Scanner(System.in);
     System.out.println("Where would you like to go?");
     String response = input.nextLine();
