@@ -16,23 +16,7 @@ public class Map {
         Location pirateCamp = new Location("Pirate Camp", "A rugged camp full of pirate gear.", false);
         Location desert = new Location("Desert", "A scorching desert with endless sand dunes.", true);
 
-        skullRock.setNeighbor("E", blueMountains);
-        blueMountains.setNeighbor("W", skullRock);
-        blueMountains.setNeighbor("S", monsterCove);
-        monsterCove.setNeighbor("N", blueMountains);
-        monsterCove.setNeighbor("E", tropicalForest);
-        tropicalForest.setNeighbor("W", monsterCove);
-        tropicalForest.setNeighbor("S", mermaidLagoon);
-        mermaidLagoon.setNeighbor("N", tropicalForest);
-        mermaidLagoon.setNeighbor("E", pixieHollow);
-        pixieHollow.setNeighbor("W", mermaidLagoon);
-        pixieHollow.setNeighbor("S", iceLand);
-        iceLand.setNeighbor("N", pixieHollow);
-        iceLand.setNeighbor("E", pirateCamp);
-        pirateCamp.setNeighbor("W", iceLand);
-        pirateCamp.setNeighbor("S", desert);
-        desert.setNeighbor("N", pirateCamp);
-
+        
         locations.put("Skull Rock", skullRock);
         locations.put("Blue Mountains", blueMountains);
         locations.put("Monster Cove", monsterCove);
