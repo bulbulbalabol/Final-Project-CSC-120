@@ -3,12 +3,8 @@ import java.util.Arrays;
 public class LocationDescription {
     public static Location createSkullRock() {
         return new Location(
-            "Skull Rock",
-            "Towering along the coast like a forgotten sentinel, Skull Rock is a massive stone 
-            formation eerily shaped like a human skull. Wind howls through its eye sockets, creating 
-            haunting whistles that echo for miles. Moss and salt cling to the jagged surface, and below, 
-            a dark cave mouth gapes wide like an open jaw—daring you to enter. The atmosphere is heavy, as if the very rock remembers ancient secrets.\r\n" + //
-                                "",
+            "Skull Rock", 
+            "Towering along the coast like a forgotten sentinel, Skull Rock is a massive stone formation eerily shaped like a human skull. Wind howls through its eye sockets, creating haunting whistles that echo for miles. Moss and salt cling to the jagged surface, and below, a dark cave mouth gapes wide like an open jaw—daring you to enter. The atmosphere is heavy, as if the very rock remembers ancient secrets.",
             Arrays.asList("Look inside the cave", "Stay outside and look around", "Check the surface of Skull Rock Mountain"),
             Arrays.asList(
                 "You wander into the cave and get hopelessly lost for three hours. It's cold, dark, and silent. You find nothing.",
