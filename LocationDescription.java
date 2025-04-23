@@ -5,10 +5,10 @@ public class LocationDescription {
         return new Location(
             "Skull Rock", 
             "Towering along the coast like a forgotten sentinel, Skull Rock is a massive stone formation eerily shaped like a human skull. Wind howls through its eye sockets, creating haunting whistles that echo for miles. Moss and salt cling to the jagged surface, and below, a dark cave mouth gapes wide like an open jaw—daring you to enter. The atmosphere is heavy, as if the very rock remembers ancient secrets.",
-            Arrays.asList("Look inside the cave", "Stay outside and look around", "Explore the exterior of Skull Rock Mountain"),
+            Arrays.asList("Look inside the cave", "Call for help", "Explore the exterior of Skull Rock Mountain"),
             Arrays.asList(
                 "You wander into the cave and get hopelessly lost for three hours. It's cold, dark, and silent. You find nothing. Game over.",
-                "As you wait, a man-eating seagull swoops down and attacks! Game over.",
+                "Your cry has attracted the wrong kind of attention! A man-eating seagull swoops down and attacks! Game over.",
                 "You scale the side of the rock and discover a hollow hole. Inside it glimmers a piece of the puzzle."
             )
         );
