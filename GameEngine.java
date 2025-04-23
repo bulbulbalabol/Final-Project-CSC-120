@@ -19,12 +19,13 @@ public class GameEngine {
         System.out.println("🌟 WELCOME TO WONDERLAND QUEST 🌟");
         while (collectedPieces.size() < 9) {
             System.out.println("\n📍 You are on your journey.");
+            MapDisplay.showMap("map.png"); 
             map.showLocations();
 
             System.out.print("\nChoose a location by entering its number (1-9): ");
             int choice = Integer.parseInt(scanner.nextLine());
             Location selected = map.getLocationByIndex(choice - 1);
-            handleLocation(selected);
+            handlelocation(selected);
         }
 
         showFinalPuzzle();

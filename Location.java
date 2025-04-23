@@ -1,12 +1,12 @@
 import java.util.List;
 
-public class location {
+public class Location {
     private String name;
     private String description;
     private List<String> choices;
     private List<String> outcomes;
 
-    public location(String name, String description, List<String> choices, List<String> outcomes) {
+    public Location(String name, String description, List<String> choices, List<String> outcomes) {
         this.name = name;
         this.description = description;
         this.choices = choices;

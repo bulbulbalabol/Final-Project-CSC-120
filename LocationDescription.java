@@ -1,8 +1,8 @@
 import java.util.Arrays;
 
 public class LocationDescription {
-    public static location createSkullRock() {
-        return new location(
+    public static Location createSkullRock() {
+        return new Location(
             "Skull Rock",
             "🪨 Towering along the coast like a forgotten sentinel...",
             Arrays.asList("🔦 Look inside the cave", "👀 Stay outside and look around", "🧗‍♂️ Check the surface of Skull Rock Mountain"),
@@ -14,8 +14,8 @@ public class LocationDescription {
         );
     }
 
-    public static location createBlueMountains() {
-        return new location(
+    public static Location createBlueMountains() {
+        return new Location(
             "Blue Mountains",
             "🏔️ Misty peaks blanketed in evergreen forests...",
             Arrays.asList("🧗 Climb to the peak", "🐐 Follow the goats", "🔍 Look around"),
@@ -27,8 +27,8 @@ public class LocationDescription {
         );
     }
 
-    public static location createMonsterCove() {
-        return new location(
+    public static Location createMonsterCove() {
+        return new Location(
             "Monster Cove",
             "🌊 This forgotten coast is cursed by folklore and fear...",
             Arrays.asList("🚣 Explore by boat", "🍽️ Check abandoned diner", "🌉 Cross the mighty bridge"),
@@ -40,8 +40,8 @@ public class LocationDescription {
         );
     }
 
-    public static location createTropicalForest() {
-        return new location(
+    public static Location createTropicalForest() {
+        return new Location(
             "Tropical Forest",
             "🌴 Lush, alive, and pulsing with strange energy...",
             Arrays.asList("🍈 Pick glowing fruit", "🦔 Follow glowing hedgehog", "🛤️ Follow glowing path"),
@@ -53,8 +53,8 @@ public class LocationDescription {
         );
     }
 
-    public static location createMermaidLagoon() {
-        return new location(
+    public static Location createMermaidLagoon() {
+        return new Location(
             "Mermaid Lagoon",
             "🧜‍♀️ A place of shimmering water and timeless song...",
             Arrays.asList("🧪 Drink pink potion", "🎶 Follow the song", "👀 Look around"),
@@ -66,8 +66,8 @@ public class LocationDescription {
         );
     }
 
-    public static location createPixieHollow() {
-        return new location(
+    public static Location createPixieHollow() {
+        return new Location(
             "Pixie Hollow",
             "🧚 A whimsical grove filled with magic and giggles...",
             Arrays.asList("🧁 Eat glowing cupcake", "🌟 Follow silver trail", "🪑 Sit and watch"),
@@ -79,8 +79,8 @@ public class LocationDescription {
         );
     }
 
-    public static location createIceLand() {
-        return new location(
+    public static Location createIceLand() {
+        return new Location(
             "Ice Land",
             "❄️ Frozen land of whispering snow and biting wind...",
             Arrays.asList("🧊 Break the icicle", "🕯️ Enter glowing cave", "☃️ Build snowman"),
@@ -92,8 +92,8 @@ public class LocationDescription {
         );
     }
 
-    public static location createPirateCamp() {
-        return new location(
+    public static Location createPirateCamp() {
+        return new Location(
             "Pirate Camp",
             "🏴‍☠️ Rugged camp by the cliffs, full of treasure and trouble...",
             Arrays.asList("🗝️ Open skull chest", "💪 Arm-wrestle pirates", "🕵️ Sneak into captain’s tent"),
@@ -105,8 +105,8 @@ public class LocationDescription {
         );
     }
 
-    public static location createDesert() {
-        return new location(
+    public static Location createDesert() {
+        return new Location(
             "Desert",
             "🏜️ Endless sands and ancient whispers...",
             Arrays.asList("🏝️ Investigate oasis", "⛏️ Dig where something glinted", "🌄 Climb dune"),
