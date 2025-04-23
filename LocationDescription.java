@@ -4,12 +4,16 @@ public class LocationDescription {
     public static Location createSkullRock() {
         return new Location(
             "Skull Rock",
-            "🪨 Towering along the coast like a forgotten sentinel...",
-            Arrays.asList("🔦 Look inside the cave", "👀 Stay outside and look around", "🧗‍♂️ Check the surface of Skull Rock Mountain"),
+            "Towering along the coast like a forgotten sentinel, Skull Rock is a massive stone 
+            formation eerily shaped like a human skull. Wind howls through its eye sockets, creating 
+            haunting whistles that echo for miles. Moss and salt cling to the jagged surface, and below, 
+            a dark cave mouth gapes wide like an open jaw—daring you to enter. The atmosphere is heavy, as if the very rock remembers ancient secrets.\r\n" + //
+                                "",
+            Arrays.asList("Look inside the cave", "Stay outside and look around", "Check the surface of Skull Rock Mountain"),
             Arrays.asList(
-                "You wander into the cave and get hopelessly lost.",
-                "A man-eating seagull swoops down and attacks! Game over.",
-                "You scale the side of the rock and discover a puzzle piece! 🧩"
+                "You wander into the cave and get hopelessly lost for three hours. It's cold, dark, and silent. You find nothing.",
+                "As you wait, a man-eating seagull swoops down and attacks! Game over.",
+                "You scale the side of the rock and discover a hollow hole. Inside it glimmers a piece of the puzzle."
             )
         );
     }
@@ -96,9 +100,9 @@ public class LocationDescription {
         return new Location(
             "Pirate Camp",
             "🏴‍☠️ Rugged camp by the cliffs, full of treasure and trouble...",
-            Arrays.asList("🗝️ Open skull chest", "💪 Arm-wrestle pirates", "🕵️ Sneak into captain’s tent"),
+            Arrays.asList("🗝️ Open skull chest", "💪 Arm-wrestle pirates", "🕵️ Sneak into captains tent"),
             Arrays.asList(
-                "Chest explodes in smoke—inside, a puzzle piece! 🧩",
+                "Chest explodes in smoke—inside, a puzzle piece! ",
                 "You pass out from pirate grog.",
                 "Parrot screams 'THIEF!' Pirates chase you."
             )
@@ -111,7 +115,7 @@ public class LocationDescription {
             "🏜️ Endless sands and ancient whispers...",
             Arrays.asList("🏝️ Investigate oasis", "⛏️ Dig where something glinted", "🌄 Climb dune"),
             Arrays.asList(
-                "The oasis vanishes, but you find a puzzle piece! 🧩",
+                "The oasis vanishes, but you find a puzzle piece!",
                 "Genie puts you to nap—3 days pass.",
                 "You slide into a camel caravan. Confused camels."
             )
