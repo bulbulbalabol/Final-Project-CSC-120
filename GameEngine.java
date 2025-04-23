@@ -25,7 +25,7 @@ public class GameEngine {
             System.out.print("\nChoose a location by entering its number (1-9): ");
             int choice = Integer.parseInt(scanner.nextLine());
             Location selected = map.getLocationByIndex(choice - 1);
-            handlelocation(selected);
+            handleLocation(selected);
         }
 
         showFinalPuzzle();
