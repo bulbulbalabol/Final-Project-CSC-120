@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class LocationFactory {
+public class LocationDescription {
     public static Location createSkullRock() {
         return new Location(
             "Skull Rock",
