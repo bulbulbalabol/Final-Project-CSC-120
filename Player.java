@@ -7,13 +7,13 @@ public class Player {
     }
 
     public void move(String direction) {
-        Location newLocation = currentLocation);
+        Location newLocation = currentLocation.getNeighbor(direction);
         if (newLocation != null) {
             currentLocation = newLocation;
         } else {
             System.out.println("Can't go that way!");
         }
-    }
+    } */
 
     public Location getCurrentLocation() {
         return currentLocation;
