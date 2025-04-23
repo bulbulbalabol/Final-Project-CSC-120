@@ -16,7 +16,7 @@ public class GameEngine {
     }
 
     public void startGame() {
-        System.out.println("🌟 WELCOME TO THE PUZZLE QUEST 🌟");
+        System.out.println("🌟 WELCOME TO WONDERLAND QUEST 🌟");
         while (collectedPieces.size() < 9) {
             System.out.println("\n📍 You are on your journey.");
             map.showLocations();
