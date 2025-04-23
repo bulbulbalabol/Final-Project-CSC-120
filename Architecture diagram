@@ -1,62 +1,77 @@
 +--------------------------+
-|      PirateGame.java     |  ← Main entry point
+|      Main.java           |  ← Done
 +--------------------------+
-| - main()                |
+| - main()                 |
 +-----------+--------------+
             |
             v
 +--------------------------+
-|      GameEngine.java     |  ← Controls flow, commands, game loop
+|      GameEngine.java     | ← Almost Done (under review)
 +--------------------------+
-| - currentLocation        |
+| - handleLocation         |
 | - player                 |
 | - map                    |
-| - handleInput()          |
-| - inventory()            |
+| - startGame()            |
+| - showFinalPuzzle()      |
 +-----------+--------------+
             |
-     +------+-------+
-     |              |
-     v              v
-+-------------+   +----------------+
-|  Map.java   |   |  Puzzle.java   |  ← Riddle / logic-based puzzle
-+-------------+   +----------------+
-| - locations[]|   | - puzzleText  |
-                   | - solution     |
-| - display() |   | - isSolved()   |
-+------+------+   +----------------+
-       |
-       v
+            v 
++------------------------+ 
+|  Map.java              | ← Done
++------------------------+ 
+| - showLocations()      |
+| - getLocationByIndex() | 
++------+-----------------+ 
+              |
+              v
++------------------------+ 
+|  MapDisplay.java       | ← Done
++------------------------+ 
+| - showMap()            |
++------+-----------------+ 
+              |
+              v
 +---------------------+
-|  Location.java       |  ← A cell in the map (Island, Sea, Cave...)
+|  Location.java      |  ← Done
 +---------------------+
 | - name              |
 | - description       |
-| - hasPuzzlePiece    |
+| - choices           |
+| - outcomes          |
+| - getName()         |
+| - getDescription()  |
+| - getChoices()      |
+| - getOutcome()      |
 +---------------------+
-
+              |
+              v
++--------------------------+ 
+|  LocationDescription.java| ← Done
++--------------------------+ 
+| - create 9 locations     |
++------+-------------------+ 
+              |
+              v
 +----------------------+
-|  Player.java         |  ← Player stats and inventory
+|  Player.java         |  ← Not Started Yet
 +----------------------+
-| - inventory[]        |
+| - inventory          |
 | - currentLocation    |
-| - move()             |
-| - solveclue()        |
-| - solvePuzzle()      |
-|- fight()             |
-|- isAlive()           |
+| - hasSword           |
+| - checkInventory()   |
 +----------------------+
-
-+--------------------------- +
-|  InventoryItem.java        |  ← Items like map pieces, compass, keys
-+----------------------      +
-| - ArrayList< puzzlePiece>()|
-| -hasSword()                |
-| - use()                    |
+              |
+              v
 +----------------------------+
-
+|  Inventory.java            |  ← Not Started Yet
++----------------------------+
+| - ArrayList<puzzlePiece>   |
+| -hasSword                  |
++----------------------------+
+              |
+              v
 +----------------------+
-|  Treasure.java       |  ← The treasure to find!
+|  Treasure.java       |  ← In progress
 +----------------------+
 | - description        |
 | - isFound            |
