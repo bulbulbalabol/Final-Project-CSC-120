@@ -7,7 +7,7 @@ public class Player {
     }
 
     public void move(String direction) {
-        Location newLocation = currentLocation.getNeighbor(direction);
+        Location newLocation = currentLocation);
         if (newLocation != null) {
             currentLocation = newLocation;
         } else {

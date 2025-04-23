@@ -1,39 +1,39 @@
-import java.util.HashMap;
+import java.util.List;
 
 public class Location {
-    
-    //Attributes
     private String name;
     private String description;
-    private Boolean hasPuzzlePiece;
-    private Boolean hasSword;
-    private HashMap<String, Location> neighbors;
+    private List<String> choices;
+    private List<String> outcomes;
 
+    public Location(String name, String description, List<String> choices, List<String> outcomes) {
+        this.name = name;
+        this.description = description;
+        this.choices = choices;
+        this.outcomes = outcomes;
+    }
 
-        /*Default constructor */
-        public Location(String name, String description, Boolean hasPuzzlePiece) {
-            this.name = name;
-            this.description = description;
-            this.hasPuzzlePiece = hasPuzzlePiece;
-            this.neighbors = new HashMap<>();
+    public String getName() {
+        return name;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public List<String> getChoices() {
+        return choices;
+    }
+
+    public String getOutcome(int index) {
+        if (index >= 0 && index < outcomes.size()) {
+            return outcomes.get(index);
+        } else {
+            return "Invalid choice.";
         }
-    
-        /* Overloaded constructor with sword */
-        public Location(String name, String description, Boolean hasPuzzlePiece, Boolean hasSword) {
-            this.name = name;
-            this.description = description;
-            this.hasPuzzlePiece = hasPuzzlePiece;
-            this.hasSword = hasSword; // Override
-        }
+    }
+}
 
-        public Location(String name, String description, Boolean hasPuzzlePiece, Boolean hasSword, Boolean hasEnemy) {
-            this.name = name;
-            this.description = description;
-            this.hasPuzzlePiece = hasPuzzlePiece;
-            this.hasSword = hasSword; // Override
-
-
-        }
     
 
 
@@ -85,7 +85,7 @@ public class Location {
         else if(name == "Monster Cove"){
 
         }
-        else if(name == "Toadstool Field"){
+        else if(name == "Pixie Hollow"){
 
         }
         else if(name == "Ice Land"){
