@@ -10,7 +10,7 @@ public class LocationDescription {
                 "You wander into the cave and get hopelessly lost for three hours. It's cold, dark, and silent. You find nothing. Game over.",
                 "Your cry has attracted the wrong kind of attention! A man-eating seagull swoops down and attacks! Game over.",
                 "You scale the side of the rock and discover a hollow hole. Inside it glimmers a piece of the puzzle."
-            )
+            ), true
         );
     }
 
@@ -23,7 +23,7 @@ public class LocationDescription {
                 "You journey for two days, braving steep paths and chilling winds. At the summit, you discover a chest containing fresh water and food. You're replenished and ready to move forward.",
                 "You track the goat sounds — only to discover that a Skinwalker was mimicking a goat. Before you can react, you're killed. Game over.",
                 "You notice something glinting beneath a massive boulder. Digging it out, you find a glass bottle. Inside: a puzzle piece!"
-            )
+            ), true
         );
     }
 
@@ -36,7 +36,7 @@ public class LocationDescription {
                 "Your boat sinks; sea creatures devour you. Game over.",
                 "You find a suspicious fridge filled with  bagels, and what's that… a puzzle piece?!",
                 "You get lost on the path. Skulls whisper... or do they? Game over."
-            )
+            ), true
         );
     }
 
@@ -49,7 +49,7 @@ public class LocationDescription {
                 "You eat a glowing fruit. It tastes amazing, but you hallucinate and pass out. Game over.",
                 "You follow the hedgehog to a hollow tree. Inside: a puzzle piece!",
                 "You follow the path, hear laughter. It's a shapeshifting Kelpie—she drags you into her lair. Game over."
-            )
+            ), true
         );
     }
 
@@ -62,7 +62,7 @@ public class LocationDescription {
                 "You drink the potion and feel weird. Your pants feel tight and you don't feel your legs. Wait, where are your legs?! Your new tail suits you well — you can join the sirens now! They guide you to the ancient underwater palace... Inside is a puzzle piece!",
                 "You track the sounds — it is gorgeous woman, with a tail! She smiles and says something in a foreign language… you feel drowsy and warm. You wake up tied up — being sacrificed to the Siren goddess! Game over.",
                 "In your peaceful state, you fail to notice the giant bee that lands on you. Ouch! Game over."
-            )
+            ), true
         );
     }
 
@@ -75,7 +75,7 @@ public class LocationDescription {
                 "You eat the glowing cupcake. Suddenly, you shrink to the size of a thimble! The pixies cheer and give you a sparkling puzzle piece.",
                 "You follow the silver trail to a circle of dancing pixies. You join in… but time feels weird. You blink—and 50 years have passed. Game over",
                 "You watch the lights. One gets too close and BOOM it explodes into glittery powder. Game over."
-            )
+            ), true
         );
     }
 
@@ -88,7 +88,7 @@ public class LocationDescription {
                 "You attempt to break off an icicle, but the whole tree cracks open! Inside is a block of ice... Containing a frozen puzzle piece!",
                 "You reach a glowing cave… but you soon learn it is the den of a frost beast! Unfortunately you didn't learn soon enough. Game over. ",
                 "You build a snowman. It opens its eyes: THANKS FOR FREEING ME! It takes all of your supplies and runs away. Game over."
-            )
+            ), true
         );
     }
 
@@ -101,7 +101,7 @@ public class LocationDescription {
                 "You arm-wrestle the pirates, and win!They offer you a swig… you drink some, and you pass out instantly. You wake up on a rowboat, drifting alone. Game over.",
                 "The hinges squeek, and inside is a dirty old puzzle piece!.",
                 "You sneak into the captain's tent. Treasure! But a parrot screams: “THIEF!” Pirates run in and... Game over."
-            )
+            ), true
         );
     }
 
@@ -114,7 +114,7 @@ public class LocationDescription {
                 "You reach an oasis. It vanishes as you drink… You collapse. Something cool touches your hand. A carved puzzle piece buried in the sand!",
                 "You dig and find an old oil lamp. You rub it. “Nap or slap?” the genie offers. You choose nap. You wake up 3 days later, sunburned and alone.",
                 "You climb the tallest dune—breathtaking view! But just then, a sandstorm hits! Game over. "
-            )
+            ), true
         );
     }
 }
