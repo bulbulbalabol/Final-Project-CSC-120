@@ -3,17 +3,17 @@ import java.util.*;
 
 public class GameEngine {
     private Map map;
-    private Player player;
     private Scanner scanner;
 
     private Set<String> collectedPieces;
 
     public GameEngine() {
         map = new Map();
-        player = new Player();
         scanner = new Scanner(System.in);
         collectedPieces = new HashSet<>();
     }
+
+    // Y/N
 
     public void startGame() {
         while (collectedPieces.size() < 9) {
