@@ -18,10 +18,6 @@ public class Map {
         return locations.get(index);
     }
 
-    public int getIndexByLocation(Location location) {
-        return locations.indexOf(location);
-    }
-
     private void populateLocations() {
         locations.add(LocationDescription.createSkullRock());
         locations.add(LocationDescription.createBlueMountains());

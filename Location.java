@@ -5,14 +5,12 @@ public class Location {
     private String description;
     private List<String> choices;
     private List<String> outcomes;
-    private Boolean hasPuzzlePiece;
 
-    public Location(String name, String description, List<String> choices, List<String> outcomes, Boolean hasPuzzlePiece) {
+    public Location(String name, String description, List<String> choices, List<String> outcomes) {
         this.name = name;
         this.description = description;
         this.choices = choices;
         this.outcomes = outcomes;
-        this.hasPuzzlePiece = hasPuzzlePiece;
     }
 
     public String getName() {
@@ -33,12 +31,5 @@ public class Location {
         } else {
             return "Invalid choice.";
         }
-    }
-    public Boolean getHasPuzzlePiece(){
-        return hasPuzzlePiece;
-    }
-
-    public void setHasPuzzlePiece(Boolean hasPuzzlePiece){
-        this.hasPuzzlePiece = hasPuzzlePiece;
     }
 }
