@@ -62,5 +62,6 @@ public class GameEngine {
         System.out.println("System.out.println(\"return A_plus;\");");
         System.out.println("\n CONGRATS! You earned an A+ in CSC120!");
         System.out.println(" Your prize: Unlimited coffee and debugging wisdom.");
+        GifDisplay.showGif("treasure.gif");
     }
 }
