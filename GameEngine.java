@@ -3,20 +3,12 @@ import java.util.*;
 
 public class GameEngine {
     private Map map;
-<<<<<<< HEAD
-    //private Player player;
-=======
->>>>>>> c39bd173d1fbf9e229fdfbc28a81c6a467eb7d0c
     private Scanner scanner;
 
     private Set<String> collectedPieces;
 
     public GameEngine() {
         map = new Map();
-<<<<<<< HEAD
-        //player = new Player();
-=======
->>>>>>> c39bd173d1fbf9e229fdfbc28a81c6a467eb7d0c
         scanner = new Scanner(System.in);
         collectedPieces = new HashSet<>();
     }
