@@ -3,14 +3,14 @@ import java.util.*;
 
 public class GameEngine {
     private Map map;
-    private Player player;
+    //private Player player;
     private Scanner scanner;
 
     private Set<String> collectedPieces;
 
     public GameEngine() {
         map = new Map();
-        player = new Player();
+        //player = new Player();
         scanner = new Scanner(System.in);
         collectedPieces = new HashSet<>();
     }
