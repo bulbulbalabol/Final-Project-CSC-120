@@ -3,7 +3,8 @@ public class Main {
 
     GameEngine engine = new GameEngine();
         engine.startGame();
-   }
+        new GameWindow();  
+    }
 }
 
 
