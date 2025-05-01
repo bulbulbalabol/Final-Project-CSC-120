@@ -1,7 +1,7 @@
 import javax.swing.*;
 
 public class GameWindow {
-    private JFrame frame;
+    private final JFrame frame;
 
     public GameWindow() {
         frame = new JFrame("Pirate Adventure Game");

@@ -1,7 +1,7 @@
 import java.util.*;
 
 public class Map {
-    private List<Location> locations;
+    private final List<Location> locations;
 
     public Map() {
         locations = new ArrayList<>();

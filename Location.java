@@ -1,10 +1,10 @@
 import java.util.List;
 
 public class Location {
-    private String name;
-    private String description;
-    private List<String> choices;
-    private List<String> outcomes;
+    private final String name;
+    private final String description;
+    private final List<String> choices;
+    private final List<String> outcomes;
 
     public Location(String name, String description, List<String> choices, List<String> outcomes) {
         this.name = name;

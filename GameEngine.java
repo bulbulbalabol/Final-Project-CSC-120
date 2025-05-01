@@ -2,10 +2,12 @@
 import java.util.*;
 
 public class GameEngine {
-    private Map map;
-    private Scanner scanner;
+    private final Map map;
+    private final Scanner scanner;
+    private boolean hasSword = false;
 
-    private Set<String> collectedPieces;
+
+    private final Set<String> collectedPieces;
 
     public GameEngine() {
         map = new Map();
@@ -17,7 +19,7 @@ public class GameEngine {
 
     public void startGame() {
         while(collectedPieces.size() < 9){
-            if (collectedPieces.size() == 0){
+            if (collectedPieces.isEmpty()){
                 System.out.println(" WELCOME TO WONDERLAND QUEST ");
                 System.out.println("\n You are on your journey.");
                 MapDisplay.showMap("map.png"); 
@@ -28,7 +30,7 @@ public class GameEngine {
                 Location selected = map.getLocationByIndex(choice - 1);
                 handleLocation(selected);
             }
-            if (collectedPieces.size() != 0 && collectedPieces.size() < 9) {
+            if (!collectedPieces.isEmpty() && collectedPieces.size() < 9) {
                 System.out.println("\n You are on your journey.");
                 System.out.println("Would you like to see the map? Respond with Y or N.");
                 String response = scanner.nextLine();
@@ -74,6 +76,22 @@ public class GameEngine {
         System.out.print("Pick an action (1-3): ");
         int action = Integer.parseInt(scanner.nextLine());
         String result = location.getOutcome(action - 1);
+        String locName = location.getName();
+        if ((locName.equals("Skull Rock") || locName.equals("Pirate Camp") || locName.equals("Pixie Hollow"))
+            && result.toLowerCase().contains("puzzle")) {
+            System.out.println("\nYou find a shimmering sword hidden nearby! You take it with you.");
+            hasSword = true;
+            }
+
+
+        if (result.toLowerCase().contains("game over") && hasSword) {
+            System.out.println("\nResult: " + result);
+            System.out.println("But wait! Your sword helps you fight your way out and survive!");
+            System.out.println("You escape and continue your journey.");
+            return;
+        }
+
+
         System.out.println("\n Result: " + result);
 
         if (result.contains("puzzle")) {
