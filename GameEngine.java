@@ -20,7 +20,7 @@ public class GameEngine {
     public void startGame() {
         while(collectedPieces.size() < 9){
             if (collectedPieces.isEmpty()){
-                System.out.println(" WELCOME TO WONDERLAND QUEST ");
+                System.out.println(" WELCOME TO WONDERLAND");
                 System.out.println("\n You are on your journey.");
                 MapDisplay.showMap("map.png"); 
                 map.showLocations();
