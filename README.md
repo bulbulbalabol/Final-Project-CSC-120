@@ -4,7 +4,7 @@
  - Your final codebase
  - Your revised annotated architecture diagram
  - Design justification (including a brief discussion of at least one alternative you considered)
- - A map of your game's layout (if applicable)
+ - A map of your game's layout (if applicable) NOTE: The map we included in the game was created using AI, and the treasure GIF was found online. We cannot take credit for either.
  - `cheatsheet.md`
  - Completed `rubric.md`
   
