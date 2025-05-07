@@ -1,5 +1,8 @@
 import java.util.*;
-
+/**
+ * The GameEngine class controls the main game loop and handles player interactions,
+ * such as exploring locations, collecting puzzle pieces, and managing game progress.
+ */
 public class GameEngine {
     // Reference to the game map object
     private final Map map;
@@ -11,7 +14,10 @@ public class GameEngine {
     // Stores names of locations where puzzle pieces have been collected
     private final Set<String> collectedPieces;
     
-    // Constructor to initialize map, scanner, and set for collected pieces
+    /**
+     * Constructs a new GameEngine instance.
+     * Initializes the game map, scanner for user input, and a set to track collected puzzle pieces.
+     */
     public GameEngine() {
         map = new Map();
         scanner = new Scanner(System.in);
@@ -19,7 +25,11 @@ public class GameEngine {
     }
 
   
-    // Starts the game loop
+    /**
+     * Starts the main game loop.
+     * Continues prompting the player to visit locations and collect puzzle pieces
+     * until all 9 pieces have been collected.
+     */
     public void startGame() {
         // Continue looping until all 9 puzzle pieces are collected
         while(collectedPieces.size() < 9){
@@ -60,8 +70,11 @@ public class GameEngine {
 
     }
     /**
-     * Handles logic for interacting with a selected location
-     * @param location
+     * Handles the interaction logic when the player visits a location.
+     * Displays the location's description, choices, and processes the player's selected action.
+     * May award a sword or a puzzle piece based on the result.
+     *
+     * @param location the Location object the player has chosen to explore
      */
     private void handleLocation(Location location) {
         // If piece from this location is already collected, skip interaction
@@ -103,7 +116,11 @@ public class GameEngine {
             collectedPieces.add(location.getName());
         }
     }
-    // Displays the final puzzle and ending message once all pieces are collected
+    
+    /**
+     * Displays the final congratulatory message and visual reward
+     * once all puzzle pieces have been collected.
+     */
     private void showFinalPuzzle() {
         System.out.println("\n All puzzle pieces collected!");
         System.out.println("Assembling final riddle...");
