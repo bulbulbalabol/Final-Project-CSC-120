@@ -1,15 +1,13 @@
 import javax.swing.*;
 /**
- * The MapDisplay class provides a utility method to display
- * an image of a map in a graphical window using Java Swing.
+ * The MapDisplay class displays our map image.
  */
 
 public class MapDisplay {
 
     /**
-     * Displays a map image in a GUI window with the title "Treasure Map".
-     * <p>
-     * This method creates a new {@code JFrame}, loads an image from the specified
+     * Displays our map image in a GUI window with the title "Treasure Map".
+     * This method creates a new JFrame, loads an image from the specified
      * path, and shows it centered on the screen.
      *
      * @param imagePath the file path to the map image to be displayed

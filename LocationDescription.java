@@ -1,7 +1,10 @@
 import java.util.Arrays;
 
 public class LocationDescription {
-    // Creates and returns the Skull Rock location with its description, choices, and outcomes
+    /**
+     * Creates Skull Rock.
+     * @return returns the Skull Rock location with its description, choices, and outcomes.
+     */
     public static Location createSkullRock() {
         return new Location(
             "Skull Rock", 
@@ -17,7 +20,10 @@ public class LocationDescription {
             )
         );
     }
-    // Creates and returns the Blue Mountains location
+    /**
+     * Creates Blue Mountains.
+     * @return returns the Blue Mountains location with its description, choices, and outcomes.
+     */
     public static Location createBlueMountains() {
         return new Location(
             "Blue Mountains",
@@ -33,7 +39,10 @@ public class LocationDescription {
             )
         );
     }
-    // Creates and returns the Monster Cove location
+    /**
+     * Creates Monster Cove.
+     * @return returns the Monster Cove location with its description, choices, and outcomes.
+     */
     public static Location createMonsterCove() {
         return new Location(
             "Monster Cove",
@@ -49,7 +58,10 @@ public class LocationDescription {
             )
         );
     }
-    // Tropical jungle full of life and mystery
+    /**
+     * Creates Tropical Forest.
+     * @return returns the Tropical Forest location with its description, choices, and outcomes.
+     */
     public static Location createTropicalForest() {
         return new Location(
             "Tropical Forest",
@@ -62,7 +74,10 @@ public class LocationDescription {
             )
         );
     }
-    // Mystical water cove filled with mermaids and danger
+    /**
+     * Creates Mermaid Lagoon.
+     * @return returns the Mermaid Lagoon location with its description, choices, and outcomes.
+     */
     public static Location createMermaidLagoon() {
         return new Location(
             "Mermaid Lagoon",
@@ -75,7 +90,10 @@ public class LocationDescription {
             )
         );
     }
-    // Whimsical yet dangerous magical glade with mischievous pixies
+    /**
+     * Creates Pixie Hollow.
+     * @return returns the Pixie Hollow location with its description, choices, and outcomes.
+     */
     public static Location createPixieHollow() {
         return new Location(
             "Pixie Hollow",
@@ -88,7 +106,10 @@ public class LocationDescription {
             )
         );
     }
-    // Frozen wilderness full of hidden danger and magical secrets
+    /**
+     * Creates Ice Land.
+     * @return returns the Ice Land location with its description, choices, and outcomes.
+     */
     public static Location createIceLand() {
         return new Location(
             "Ice Land",
@@ -101,7 +122,10 @@ public class LocationDescription {
             )
         );
     }
-    // Pirate-filled cliffside camp full of chaos and hidden treasure
+    /**
+     * Creates Pirate Camp. 
+     * @return returns the Pirate Camp location with its description, choices, and outcomes.
+     */
     public static Location createPirateCamp() {
         return new Location(
             "Pirate Camp",
@@ -114,7 +138,10 @@ public class LocationDescription {
             )
         );
     }
-    // A mirage-filled desert that blurs the line between illusion and reality
+    /**
+     * Creates the Desert.
+     * @return returns the Desert location with its description, choices, and outcomes.
+     */
     public static Location createDesert() {
         return new Location(
             "Desert",

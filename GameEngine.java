@@ -10,7 +10,6 @@ public class GameEngine {
     private final Scanner scanner;
     // Tracks whether the player has collected the sword
     private boolean hasSword = false;
-
     // Stores names of locations where puzzle pieces have been collected
     private final Set<String> collectedPieces;
     
@@ -94,14 +93,14 @@ public class GameEngine {
         int action = Integer.parseInt(scanner.nextLine());
         String result = location.getOutcome(action - 1);
         String locName = location.getName();
-        // If at special locations and outcome contains a puzzle, grant the sword
+        // If a special location and outcome contains a sword, grant the sword. hasSword becomes true.
         if ((locName.equals("Skull Rock") || locName.equals("Pirate Camp") || locName.equals("Pixie Hollow"))
             && result.toLowerCase().contains("puzzle")) {
             System.out.println("\nYou find a shimmering sword hidden nearby! You take it with you.");
             hasSword = true;
             }
 
-        // If outcome ends the game but the player has the sword, they survive
+        // If outcome WOULD end the game, but the player has the sword, then they survive.
         if (result.toLowerCase().contains("game over") && hasSword) {
             System.out.println("\nResult: " + result);
             System.out.println("But wait! Your sword helps you fight your way out and survive!");
@@ -111,7 +110,7 @@ public class GameEngine {
 
         // Display result of action
         System.out.println("\n Result: " + result);
-        // If puzzle piece was found, mark this location as completed
+        // If puzzle piece was found, mark this location as completed, and add the puzzle piece to the HashSet "collectedPieces."
         if (result.contains("puzzle")) {
             collectedPieces.add(location.getName());
         }
