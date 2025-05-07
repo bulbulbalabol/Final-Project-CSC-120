@@ -5,8 +5,6 @@ public class GameEngine {
     private final Map map;
     private final Scanner scanner;
     private boolean hasSword = false;
-
-
     private final Set<String> collectedPieces;
 
     public GameEngine() {
