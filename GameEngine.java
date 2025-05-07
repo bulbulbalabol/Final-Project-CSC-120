@@ -16,7 +16,7 @@ public class GameEngine {
     
     /**
      * Constructs a new GameEngine instance.
-     * Initializes the game map, scanner for user input, and a set to track collected puzzle pieces.
+     * Initializes the game map, scanner for user input, and a HashSet to track collected puzzle pieces.
      */
     public GameEngine() {
         map = new Map();
