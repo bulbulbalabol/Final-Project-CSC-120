@@ -6,31 +6,36 @@
             |
             v
 +--------------------------+
-|      GameEngine.java     | ← Almost Done (under review)
+|      GameEngine.java     | ← Done
 +--------------------------+
-| - handleLocation         |
-| - player                 |
+| - hasSword               |
+| - scanner                |
+| - collectedPieces        |
 | - map                    |
 | - startGame()            |
+| - handleLocation         |
 | - showFinalPuzzle()      |
-+-----------+--------------+
-            |
-            v 
++-----------+--------------+       -----> +------------------------+ 
+              |                          |  GifDisplay.java       | ← Done
+              |                          +------------------------+ 
+              |                          | - showGif()            |
+              |                          +------+-----------------+ 
+              |
+              |
+              v 
 +------------------------+ 
 |  Map.java              | ← Done
 +------------------------+ 
-| - showLocations()      |
+| - showLocations()      |   
 | - getLocationByIndex() | 
-+------+-----------------+ 
++------+-----------------+        -----> +------------------------+ 
+              |                          |  MapDisplay.java       | ← Done
+              |                          +------------------------+ 
+              |                          | - showMap()            |
+              |                          +------+-----------------+ 
               |
               v
-+------------------------+ 
-|  MapDisplay.java       | ← Done
-+------------------------+ 
-| - showMap()            |
-+------+-----------------+ 
-              |
-              v
+
 +---------------------+
 |  Location.java      |  ← Done
 +---------------------+
@@ -48,31 +53,13 @@
 +--------------------------+ 
 |  LocationDescription.java| ← Done
 +--------------------------+ 
-| - create 9 locations     |
+| - ccreateSkullRock()     |
+| - createBlueMountains()  |
+| - createMonsterCove()    |
+| - createTropicalForest() |
+| - createMermaidLagoon()  |
+| - createPixieHollow()    |
+| - createIceLand()        |
+| - createPirateCamp()     |
+| - createDesert()         |
 +------+-------------------+ 
-              |
-              v
-+----------------------+
-|  Player.java         |  ← Not Started Yet
-+----------------------+
-| - inventory          |
-| - currentLocation    |
-| - hasSword           |
-| - checkInventory()   |
-+----------------------+
-              |
-              v
-+----------------------------+
-|  Inventory.java            |  ← Not Started Yet
-+----------------------------+
-| - ArrayList<puzzlePiece>   |
-| -hasSword                  |
-+----------------------------+
-              |
-              v
-+----------------------+
-|  Treasure.java       |  ← In progress
-+----------------------+
-| - description        |
-| - isFound            |
-+----------------------+
