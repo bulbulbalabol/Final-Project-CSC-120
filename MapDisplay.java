@@ -8,7 +8,7 @@ public class MapDisplay {
 
     /**
      * Displays a map image in a GUI window with the title "Treasure Map".
-     * <p>
+     * <public>
      * This method creates a new {@code JFrame}, loads an image from the specified
      * path, and shows it centered on the screen.
      *
