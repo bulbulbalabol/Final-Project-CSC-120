@@ -1,11 +1,15 @@
 import java.util.Arrays;
 
 public class LocationDescription {
+    // Creates and returns the Skull Rock location with its description, choices, and outcomes
     public static Location createSkullRock() {
         return new Location(
             "Skull Rock", 
+            // Detailed description of the eerie Skull Rock environment
             "Towering along the coast like a forgotten sentinel, Skull Rock is a massive stone formation eerily shaped like a human skull. Wind howls through its eye sockets, creating haunting whistles that echo for miles. Moss and salt cling to the jagged surface, and below, a dark cave mouth gapes wide like an open jaw—daring you to enter. The atmosphere is heavy, as if the very rock remembers ancient secrets.",
+            // Player choices for actions at this location
             Arrays.asList("Look inside the cave", "Call for help", "Explore the exterior of Skull Rock Mountain"),
+            // Corresponding outcomes for each action
             Arrays.asList(
                 "You wander into the cave and get hopelessly lost for three hours. It's cold, dark, and silent. You find nothing. Game over.",
                 "Your cry has attracted the wrong kind of attention! A man-eating seagull swoops down and attacks! Game over.",
@@ -13,12 +17,15 @@ public class LocationDescription {
             )
         );
     }
-
+    // Creates and returns the Blue Mountains location
     public static Location createBlueMountains() {
         return new Location(
             "Blue Mountains",
+            // Description of a majestic but dangerous mountain range
             "The Blue Mountains stretch like ancient giants into the clouds, their misty peaks blanketed in evergreen forests and icy breath. The air is sharp and fresh, filled with the distant cries of wild goats and rustling winds. Crystalline streams carve paths down the slopes, glinting in the thin light. It's beautiful, but wild. Few make it through these ranges without facing trials.",
+            // Choices presented to the player
             Arrays.asList("Climb to the peak", "Follow the goats", "Look around"),
+            // Outcomes for each choice
             Arrays.asList(
                 "You journey for two days, braving steep paths and chilling winds. At the summit, you discover a chest containing fresh water and food. You're replenished and ready to move forward.",
                 "You track the goat sounds — only to discover that a Skinwalker was mimicking a goat. Before you can react, you're killed. Game over.",
@@ -26,12 +33,15 @@ public class LocationDescription {
             )
         );
     }
-
+    // Creates and returns the Monster Cove location
     public static Location createMonsterCove() {
         return new Location(
             "Monster Cove",
+            // Description of a cursed coastal area filled with mystery and fear
             "This forgotten stretch of coast is cursed by folklore and fear. Monster Cove's waves crash rhythmically, yet the waters remain eerily still beneath the surface. Kelp drapes over jagged rocks like drowned hair. Abandoned shacks and a rotting pier suggest a once-thriving fishing village—now reclaimed by shadows. Locals whisper of sea monsters with too many eyes and never enough teeth.",
+            // Available actions for the player
             Arrays.asList("Take the abandoned boat to explore the waters", "Go inside an abandoned diner with its lights on", "Take a loger path along the pier"),
+            // Results from the actions
             Arrays.asList(
                 "Your boat sinks; sea creatures devour you. Game over.",
                 "You find a suspicious fridge filled with  bagels, and what's that… a puzzle piece?!",
