@@ -49,7 +49,7 @@ public class LocationDescription {
             )
         );
     }
-
+    // Tropical jungle full of life and mystery
     public static Location createTropicalForest() {
         return new Location(
             "Tropical Forest",
@@ -62,7 +62,7 @@ public class LocationDescription {
             )
         );
     }
-
+    // Mystical water cove filled with mermaids and danger
     public static Location createMermaidLagoon() {
         return new Location(
             "Mermaid Lagoon",
@@ -75,7 +75,7 @@ public class LocationDescription {
             )
         );
     }
-
+    // Whimsical yet dangerous magical glade with mischievous pixies
     public static Location createPixieHollow() {
         return new Location(
             "Pixie Hollow",
@@ -88,7 +88,7 @@ public class LocationDescription {
             )
         );
     }
-
+    // Frozen wilderness full of hidden danger and magical secrets
     public static Location createIceLand() {
         return new Location(
             "Ice Land",
@@ -101,7 +101,7 @@ public class LocationDescription {
             )
         );
     }
-
+    // Pirate-filled cliffside camp full of chaos and hidden treasure
     public static Location createPirateCamp() {
         return new Location(
             "Pirate Camp",
@@ -114,7 +114,7 @@ public class LocationDescription {
             )
         );
     }
-
+    // A mirage-filled desert that blurs the line between illusion and reality
     public static Location createDesert() {
         return new Location(
             "Desert",
