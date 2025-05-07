@@ -10,7 +10,7 @@ YES 2 pts: Game has **multiple possible paths / outcomes** (i.e. gameplay depend
 
 YES (but it prints that you have already been to this location) 1 pt: Gameplay supports **reversible moves** where reasonable (e.g., if you pick up an object, you should be able to put it back down again later, possibly in a different place; if you go north then you should be able to return to the previous location by going south unless something has blocked your return path).
 
-YES (The only restriction they have is constant death if they don't get the sowrd which means they don't get the puzzle and don't win treasure.) 1 pt: Some paths through the game have **restricted access** until the player has completed a task or acquired a specific item (i.e. a key to open a door, etc.).
+YES (The only restriction they have is that some options lead to death if they don't get the sword which means they don't get the puzzle and don't win treasure.) 1 pt: Some paths through the game have **restricted access** until the player has completed a task or acquired a specific item (i.e. a key to open a door, etc.).
 
 
 ## Back-End Design (10 pts)
