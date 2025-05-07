@@ -1,6 +1,14 @@
 import javax.swing.*;
-public class GifDisplay {
-        // This method displays a GIF in a new window
+/**
+ * GifDisplay is a utility class used to display animated GIFs in a pop-up window.
+ */
+public class GifDisplay {  
+       /**
+        * Displays a GIF in a new JFrame window titled "Victory!".
+        * The window is automatically sized to fit the GIF and centered on the screen.
+        *
+        * @param gifPath the file path to the GIF image to be displayed
+        */  
         public static void showGif(String gifPath) {
             // Create a new window (JFrame) with the title "Victory!"
             JFrame frame = new JFrame("Victory!");
