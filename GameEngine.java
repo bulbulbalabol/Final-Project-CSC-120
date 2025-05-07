@@ -59,7 +59,10 @@ public class GameEngine {
         
 
     }
-    // Handles logic for interacting with a selected location
+    /**
+     * Handles logic for interacting with a selected location
+     * @param location
+     */
     private void handleLocation(Location location) {
         // If piece from this location is already collected, skip interaction
         if (collectedPieces.contains(location.getName())) {
