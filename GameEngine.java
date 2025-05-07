@@ -11,7 +11,7 @@ public class GameEngine {
     // Tracks whether the player has collected the sword
     private boolean hasSword = false;
 
-    // Stores names of locations where puzzle pieces have been collected
+    // Stores numbers of locations where puzzle pieces have been collected
     private final Set<String> collectedPieces;
     
     /**
