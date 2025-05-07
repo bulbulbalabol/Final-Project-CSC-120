@@ -18,7 +18,7 @@ public class GameEngine {
         collectedPieces = new HashSet<>();
     }
 
-    // Y/N
+  
     // Starts the game loop
     public void startGame() {
         // Continue looping until all 9 puzzle pieces are collected
