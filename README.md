@@ -10,7 +10,7 @@
   
 ## Additional Reflection Questions
  - What was your **overall approach** to tackling this project?
- We broke the project into parts. We created an outline, and from there we determined what order to tackle the steps. We started by creating a bare shell of the game, and adding in things from there. At first we just needed to create 9 different locations, with three options in each. Then we needed to let the user choose a location and chose an option. Then we added in the treasure, the sword, and the question "would you like to see the map?"
+ We broke the project into parts. We created an outline, and from there we determined what order to tackle the steps. We started by creating a bare shell of the gal4me, and adding in things from there. At first we just needed to create 9 different locations, with three options in each. Then we needed to let the user choose a location and chose an option. Then we added in the treasure, the sword, and the question "would you like to see the map?"
  - What **new thing(s)** did you learn / figure out in completing this project?
  We learned a lot about GUI and how to display images. We learned learned about the term .isEmpty(). We also learned about using a hashSet to store Strings.
  - Is there anything that you wish you had **implemented differently**?
